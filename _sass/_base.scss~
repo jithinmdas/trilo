@@ -33,8 +33,8 @@ $purple: #B509AC;
 
 
 $grey-color-dark: #dddd;   /* footer */
-$grey-color-light: #dd;  /* navigation bar border */
-$text-color:     #666;
+$grey-color-light: #ddd;  /* navigation bar border */
+$text-color:     #366;
 
 /* Set theme color *************************/
 $theme-color:   $red;

@@ -19,5 +19,4 @@ sudo tar -xvfj ./gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 -C /usr/loc
 
 {% endhighlight %}
 
-<hr>
 JLink tools will be available as a installer. So you can install JLink software using this installer.

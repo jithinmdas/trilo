@@ -18,7 +18,6 @@ permalink: /about/
 	<a href="https://github.com/jithinmdas" target="_blank"><i class="fa fa-github-square"></i></a>
 	<a href="https://in.linkedin.com/in/jithinmdas91" target="_blank"><i class="fa fa-linkedin-square"></i></a>
 	<a href="https://twitter.com/jithinmdas91" target="_blank"><i class="fa fa-twitter-square"></i></a>
-	<a href="http://tumblr.com" target="_blank"><i class="fa fa-tumblr-square"></i></a>	
 </span>
 
 <div class="col three caption">

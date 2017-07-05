@@ -13,11 +13,31 @@ I used Ubuntu 14.04 LTS. We need Nordic SDK, GNU tools, JLink software and ARM g
 Download latest <a href="https://developer.nordicsemi.com/nRF51_SDK/" target="blank">Nordik SDK</a>, the <a href="https://launchpad.net/gcc-arm-embedded/+download" target="blank">ARM Tools</a>, the <a href="https://www.segger.com/downloads/jlink" target="blank">JLink Tools</a>. Extract Nordic SDK and ARM gcc tools as follows,
 
 {% highlight c++ %} 
-
 unzip ./nRF5_SDK_13.0.0_04a0bfd.zip -d ~/ble
 sudo tar -xvfj ./gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 -C /usr/local
-
 {% endhighlight %}
 
-<hr>
-JLink tools will be available as a installer. So you can install JLink software using this installer.
+JLink tools will be available as a installer. So you can install JLink software using the installer.
+Now we need to link the arm-gcc to Nordic SDK. To do this go to ~/ble/nRF5x_SDK/components/toolchain/gcc/ and edit Makefile.posix like below
+
+{% highlight c++ %}
+GNU_INSTALL_ROOT := /usr/local/gcc-arm-none-eabi-5_4-2016q3
+GNU_VERSION := 5.4.1
+GNU_PREFIX := arm-none-eabi
+{% endhighlight %}
+
+#### Running an example on PCA10040
+We are going to run ble_app_hrs on PCA10040. In Nordic SDK go to /examples/ble_peripheral/ble_app_hrs/pca10040/s132/armgcc/. There you will find two files, a Makefile and a linker script. Open Makefile and change
+
+{% highlight c++ %}
+CFLAGS += -Wall -Werror -O3 to CFLAGS += -Wall -Werror -O0 -g3 
+CFLAGS += -fno-builtin --short-enums to CFLAGS += --short-enums
+{% endhighlight %}
+
+The linker script contains information about where to place the program in the flash an where and how much ram is left for it. According to the chip marking you can find out how much RAM and flash you have in the chip. According to the available RAM and flash available and the amount of RAM and flash used by Softdevice we need to make changes in the Linker Script. For PCA10040 Nordic has already specified in the LinkerScript. But if you are using your own custom board and some other Nordic chip with different amount of RAM and Flash, then you have to set the below values accordingly.
+
+{% highlight c++ %}
+FLASH (rx) : ORIGIN = 0x1f000, LENGTH = 0x61000
+RAM (rwx) :  ORIGIN = 0x20002c38, LENGTH = 0xd3c8
+{% endhighlight %}
+

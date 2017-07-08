@@ -13,6 +13,8 @@ I'm Jithin M Das. Passionate about Embedded Electronics. Helping hardware startu
 Working as Firmware Lead in Exploride Inc. Worked in Fin, the smart ring.
 
 <br/>
+<br/>
+<br/>
 <hr/>
 <br/>
 <span class="contacticon center">

@@ -7,8 +7,10 @@ permalink: /about/
 <img class="col one right" src="/img/prof_pic.jpg">
 
 <br/>
+<b>Who am I?</b>
 
-
+I'm Jithin M Das. Passionate about Embedded Electronics. Helping hardware startups to make their dreams come true.
+Working as Firmware Lead in Exploride Inc. Worked in Fin, the smart ring.
 
 <br/>
 <hr/>

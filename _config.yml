@@ -2,7 +2,7 @@
 title: trilo
 email: jmd@jithinmdas.com
 description: > # this means to ignore newlines until "baseurl:"
-  A simple, whitespace, helvetica based portfolio theme.
+  A technical blog from Jithin M Das
 baseurl:  # the subpath of your site, e.g. /blog/
 url:  # the base hostname & protocol for your site
 twitter_username: twitter_username

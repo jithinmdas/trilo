@@ -17,7 +17,7 @@ Minimal requirements needed for your workstation.
 
 You can build Android on Linux or Mac. But I prefer Linux specifically Ubuntu LTS(Long Term Support), because AOSP master branch is developed and tested on Ubuntu LTS. So software requirements are,
 
-1. OS - Ubuntu 12.04/14.04
+1. OS - Ubuntu 16.04/14.04
 2. Java Development Kit(JDK) - OpenJDK 7
 3. Python 2.7
 4. GNU Make 3.82
@@ -27,11 +27,17 @@ You can build Android on Linux or Mac. But I prefer Linux specifically Ubuntu LT
 <br/>
 #### **Installing JDK**
 
-Since we are using Linux, I will give instructions to install the OpenJDK. Install OpenJDK using below commands.
+Since we are using Linux, I will share the commands to install the OpenJDK.
+<br/>
+If Ubuntu version is 14.04, use below command before standard installation,
+
+`$ sudo add-apt-repository ppa:openjdk-r/ppa`
+
+Now proceed with standard installation
 
 {% highlight bash %}
 $ sudo apt-get update
-$ sudo apt-get install openjdk-7-jdk
+$ sudo apt-get install openjdk-8-jdk
 {% endhighlight %}
 
 Update the default Java version by running

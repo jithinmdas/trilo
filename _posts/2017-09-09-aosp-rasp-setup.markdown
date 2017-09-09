@@ -76,8 +76,8 @@ To install Repo,
 	```
 	$ mkdir ~/working_directory
 	$ cd ~/working_directory/
-		$ mkdir my_android
-		$ cd my_android/ 
+	$ mkdir my_android
+	$ cd my_android/ 
 	$ repo init -u https://android.googlesource.com/platform/manifest -b  android-6.0.1_r3
 	$ repo sync
 	```

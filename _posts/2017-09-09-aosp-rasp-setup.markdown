@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with AOSP
+title: Getting started with Android Open Source Project
 date: 2017-09-08 16:00:00
 description: How to setup development environment on Linux for AOSP (Android Open Source Project)
 ---
